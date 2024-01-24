@@ -9,6 +9,7 @@ Route::get('/example', function () {
 ```
 
 ### 2. コントローラアクションの使用
+※{id}はURLパラメータ
 
 ```php
 use App\Http\Controllers\UserController;
