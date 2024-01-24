@@ -42,4 +42,3 @@ use Illuminate\Support\Facades\Route;
 Route::resource('photos', PhotoController::class);
 ```
 
-これらの例は、Laravel 9でのルーティングの基本的な構文を示しています。Laravelのバージョンによっては、特定の機能や構文が異なる場合があるので、公式ドキュメントを参照して、使用しているバージョンに合った正確な情報を確認することが重要です。
