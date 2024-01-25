@@ -44,6 +44,9 @@
 
 3. **リクエストのバリデーション**: フォームリクエストを使用して、入力データのバリデーションを行います。
 
+
+###サンプルコード
+
 ```php
 namespace App\Http\Controllers;
 
@@ -55,7 +58,7 @@ class UserController extends Controller
     /**
      * ユーザーの一覧を表示します。
      */
-    public function index(Request $request)
+    public function index()
     {
         $users = User::all();
         return view('users.index', ['users' => $users]);
