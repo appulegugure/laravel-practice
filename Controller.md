@@ -90,3 +90,32 @@ class UserController extends Controller
     // その他のアクション...
 }
 ```
+
+## viewへ値を渡す
+
+```php
+public function index()
+{
+    $users = User::all();
+    return view('users.index', ['users' => $users]);
+}
+```
+```html
+@foreach ($users as $user)
+    <p>{{ $user->name }}</p>
+    <!-- その他のユーザー情報の表示 -->
+@endforeach
+```
+
+エラーがある場合
+```html
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+```
