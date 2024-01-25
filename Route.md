@@ -41,7 +41,7 @@ Route::middleware(['auth'])->group(function () {
 use App\Http\Controllers\PhotoController;
 use Illuminate\Support\Facades\Route;
 
-Route::resource('photos', PhotoController::class);
+Route::apiResource('photos', PhotoController::class);
 ```
 
 RESTfull APIエンドポイントを自動で生成
